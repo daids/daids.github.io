@@ -4,8 +4,7 @@ node_js:
   - 10 # use nodejs v10 LTS
 cache: npm
 branches:
-  only:
-    - master # build master branch only
+  all_branches: true
 script:
   - hexo generate # generate static files
 deploy:
