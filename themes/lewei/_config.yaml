@@ -1,0 +1,8 @@
+menu:
+  home: / || home
+  tags: /tags/ || tags
+  categories: /categories/ || th
+  archives: /archives/ || archive
+  about: /about/ || user
+#css dir
+css: css

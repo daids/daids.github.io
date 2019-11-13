@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Daidongsheng' BLOG
+title: Daidongsheng' Blog
 subtitle: 每一次的阅读都有收获
 description: 当你感到困惑的时候就好好读读源码
 author: Dai dongsheng
 website: daidongsheng.com
 since: 2017
-language: zh-Hans
+language: zh-cn
 timezone: UTC
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.daidongsheng.com
+url: https://www.daidongsheng.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -69,16 +69,23 @@ theme: next
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
-deploy: 
-  type: git
-  repo: git@github.com:daids/daids.github.io.git
+#deploy: 
+  #type: git
+  #repo: git@github.com:daids/daids.github.io.git
+
+deploy:
+  type: rsync
+  host: daidongsheng.com
+  user: www-data
+  root: /data/www/daidongsheng
+
 
 social:
   github: https://github.com/daids
   twitter: https://twitter.com/daidongsheng
-  weibo: http://weibo.com/daidongsheng
+  weibo: https://weibo.com/daidongsheng
 
-avatar: http://www.daidongsheng.com/upload/avatar.jpeg
+avatar: https://daidongshengcom-1251194587.file.myqcloud.com/avatar.jpeg
 
 html_minifier:
   removeComments: true

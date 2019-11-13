@@ -223,7 +223,7 @@ run:
     var sumOfArrayElements = array.reduce(sum, 0)
 ```
 ### 类
-当java开发者转向js项目时都不想缺少类，不喜欢显式继承，比如在java语言中，使用原型继承代替魔法代码，尽管有些Js开发者返回，但是类依然出现在ES6中，他们没有改变继承的概念，依然使用原型继承的语言糖。
+当java开发者转向js项目时都不想缺少类，不喜欢显式继承，比如在java语言中，使用原型继承代替魔法代码，尽管有些js开发者反对，但是类依然出现在ES6中，他们没有改变继承的概念，依然使用原型继承的语言糖。
 ```javascript
     class Point {
         constructor(x, y) {
@@ -263,9 +263,11 @@ run:
 ```
 ### 改善对象实现
 对象实现得到改善，现在变得更容易
-    - 定义变量字段赋相同的名字
-    - 定义函数
-    - 定义动态属性
+
+* 定义变量字段赋相同的名字
+* 定义函数
+* 定义动态属性
+
 ```javascript
     const color = 'red'
     const point = {
@@ -328,7 +330,7 @@ run:
 
     console.log('Copy of', array, 'is', copyOfArray)
     console.log('Are', array, 'and', copyOfArray, 'same?', array === copyOfArray)
-````
+```
 run:
 ```shell
     Copy of ["red","blue","green"] is ["red","blue","green"] 
@@ -342,7 +344,7 @@ run:
     var mergedColors = [...defaultColors, ...userDefinedColors]
 
     console.log('Merged colors', mergedColors)
-````
+```
 run:
 ```shell
     Merged colors ["red","blue","green","yellow","orange"] 
@@ -354,7 +356,7 @@ run:
       console.log('Top three colors are ' + first + ', ' + second + ' and ' + third + '. Others are: ' + others)
     }
     printColors('yellow', 'blue', 'orange', 'white', 'black')
-````
+```
 run:
 ```shell
     Top three colors are yellow, blue and orange. Others are: white,black 
@@ -375,7 +377,7 @@ run:
 
     printFirstAndSecondElement(array)
     printSecondAndFourthElement(array)
-````
+```
 run:
 ```shell
     First element is 1, second is 2 
@@ -397,7 +399,7 @@ run:
     }
 
     printBasicInfo(person)
-````
+```
 run:
 ```shell
     John Smith - teacher 
@@ -420,7 +422,7 @@ Promise使你可以获取延迟任务或运行时间较长任务的结果，Prom
             .then(result => console.log('Result is: ' + result))
             .catch(result => console.log('Error: ' + result))
     }
-````
+```
 run:
 ```shell
     Result is: 0.7930997430022211 
